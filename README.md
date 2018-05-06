@@ -5,3 +5,6 @@ Our goal is to invoke an AWS Lambda function from other cloud providers. Such fu
 * Created free-tier AWS account & setup basic credentials
 * Completed this [tutorial](https://docs.aws.amazon.com/lambda/latest/dg/with-s3.html), allowing us to invoke Lambdas from S3
 * Next steps: Adding the S3 library to a different FaaS platform and invoking AWS Lambdas via S3
+
+# Week 6 Contribution:
+* Setup Azure Functions and link connection with S3
