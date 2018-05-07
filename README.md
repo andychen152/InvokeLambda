@@ -7,4 +7,5 @@ Our goal is to invoke an AWS Lambda function from other cloud providers. Such fu
 * Next steps: Adding the S3 library to a different FaaS platform and invoking AWS Lambdas via S3
 
 # Week 6 Contribution:
-* Setup Azure Functions and link connection with S3
+* Completed this [tutorial](https://docs.microsoft.com/en-us/azure/azure-functions/), setting up Azure Functions
+* Linked Azure Functions with S3
