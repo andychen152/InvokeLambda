@@ -8,4 +8,5 @@ Our goal is to invoke an AWS Lambda function from other cloud providers. Such fu
 
 # Week 6 Contribution:
 * Completed this [tutorial](https://docs.microsoft.com/en-us/azure/azure-functions/), setting up Azure Functions
-* Linked Azure Functions with S3
+* Set up python script to put objects in S3
+* Next steps: Link Azure Functions with S3 by deploying python script on Azure Functions
