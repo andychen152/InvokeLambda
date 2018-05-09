@@ -18,17 +18,17 @@ def getBucket(access_key, secret_key):
 		)
 
 	for bucket in conn.get_all_buckets():
-		print "{name}\t{created}".format(
+		print ("{name}\t{created}".format(
 			name = bucket.name,
 			created = bucket.creation_date,
-		)
+		))
 
-if __name__ ='__main__':
+if __name__ =='__main__':
 
 	if len(sys.argv) != 3:
 		print('Usage Error: /"python GetBuckets.py [access_key] [secret_key]')
-		return 1
+		sys.exit(1)
 
-	getBucket(argv[1], argv[2])
+	getBucket(sys.argv[1], sys.argv[2])
 
-	return 0
+
