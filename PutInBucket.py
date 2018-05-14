@@ -8,9 +8,9 @@ def putInBucket(access_key, secret_key, bucket_name, path_to_data):
 	'''
 	function to put data in bucket
 	'''
-	ACCESS_KEY_ID = access_key # 'AKIAJP7ODR4KL5VJZTUA'
-	ACCESS_SECRET_KEY = secret_key # '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'
-	BUCKET_NAME = bucket_name # 'invokelambda2632018'
+	ACCESS_KEY_ID = access_key 
+	ACCESS_SECRET_KEY = secret_key 
+	BUCKET_NAME = bucket_name 
 
 	data = open(path_to_data, 'rb')
 
