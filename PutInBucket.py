@@ -2,6 +2,18 @@
 import sys
 import boto3
 from botocore.client import Config
+import random 
+from PIL import Image
+
+
+def genRandomImage():
+	'''
+	function to generate random image
+	take in size as paramter later on
+	'''
+	dat = bytes([random.randint(1,3) for x in range(10000)])
+	return Image.frombytes('1', (200,200), dat)
+
 
 
 def putInBucket(access_key, secret_key, bucket_name, path_to_data):
@@ -12,7 +24,7 @@ def putInBucket(access_key, secret_key, bucket_name, path_to_data):
 	ACCESS_SECRET_KEY = secret_key 
 	BUCKET_NAME = bucket_name 
 
-	data = open(path_to_data, 'rb')
+	data = genRandomImage() # open(path_to_data, 'rb')
 
 	s3 = boto3.resource(
 	    's3',
