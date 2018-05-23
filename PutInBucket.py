@@ -6,13 +6,13 @@ import random
 from PIL import Image
 
 
-def genRandomImage():
-	'''
-	function to generate random image
-	take in size as paramter later on
-	'''
-	dat = bytes([random.randint(1,3) for x in range(10000)])
-	return Image.frombytes('1', (200,200), dat)
+# def genRandomImage():
+# 	'''
+# 	function to generate random image
+# 	take in size as paramter later on
+# 	'''
+# 	dat = bytes([random.randint(1,3) for x in range(10000)])
+# 	return Image.frombytes('1', (200,200), dat)
 
 
 
@@ -20,11 +20,11 @@ def putInBucket(access_key, secret_key, bucket_name, path_to_data):
 	'''
 	function to put data in bucket
 	'''
-	ACCESS_KEY_ID = access_key 
-	ACCESS_SECRET_KEY = secret_key 
-	BUCKET_NAME = bucket_name 
+	ACCESS_KEY_ID = 'AKIAJP7ODR4KL5VJZTUA'
+	ACCESS_SECRET_KEY = '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' 
+	BUCKET_NAME = 'invokelambda2632018'
 
-	data = genRandomImage() # open(path_to_data, 'rb')
+	data = 'this is a test' #genRandomImage() # open(path_to_data, 'rb')
 
 	s3 = boto3.resource(
 	    's3',
@@ -33,7 +33,7 @@ def putInBucket(access_key, secret_key, bucket_name, path_to_data):
 	    config=Config(signature_version='s3v4')
 	)
 
-	s3.Bucket(BUCKET_NAME).put_object(Key=path_to_data, Body=data)
+	s3.Bucket(BUCKET_NAME).put_object(Key='test.txt', Body=data)
 
 
 if __name__ =='__main__':

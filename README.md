@@ -14,3 +14,10 @@ Our goal is to invoke an AWS Lambda function from other cloud providers. Such fu
 # Week 7 Contributions:
 * Linked Azure Function with S3
 * Next steps: Start profiling our procedure to trigger Lambda Function through Azure and brainstorm other ways to replicate the same Lambda Function trigger.
+
+
+# Week 8 Contributions:
+* Able to trigger different image sizes from Azure to AWS
+* Brainstormed to profile against different ways to trigger Lambda (ex: API Gateway)
+* Trigger Link: https://s3buckettrigger.azurewebsites.net/api/HttpTriggerJS1?code=jTMWtHeaFeJ0C5Ah7mqcdwkjW13D1UePrMx6pWycHQcB4uWlNQJwBw==
+* Next steps: Finish figuring out 2-3 more ways to trigger Lambda through Azure Functions and fully connect them
