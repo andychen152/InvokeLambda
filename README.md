@@ -21,3 +21,6 @@ Our goal is to invoke an AWS Lambda function from other cloud providers. Such fu
 * Brainstormed to profile against different ways to trigger Lambda (ex: API Gateway)
 * Trigger Link: https://s3buckettrigger.azurewebsites.net/api/HttpTriggerJS1?code=jTMWtHeaFeJ0C5Ah7mqcdwkjW13D1UePrMx6pWycHQcB4uWlNQJwBw==
 * Next steps: Finish figuring out 2-3 more ways to trigger Lambda through Azure Functions and fully connect them
+
+# Week 9 Contrubutions:
+* New Trigger Link: https://s3buckettrigger.azurewebsites.net/api/HttpTriggerJS1?code=U53HmWRY/bzqPT6rcW70GETdM/SyPoPFT72e1znhvx94cPqUxS2n3w==
