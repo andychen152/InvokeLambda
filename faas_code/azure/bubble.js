@@ -1,29 +1,49 @@
 // TODO(ac): translate to azure function equivalent
 
-exports.handler = (event, context, callback) => {
-    var start = new Date().getTime();
-    // array to sort
-    var array = event.array;
+module.exports = function (context, req) {
+    context.log('JavaScript HTTP trigger function processed a request.');
 
-    // swap function helper
-    function swap(array, i, j) {
-      var temp = array[i];
-      array[i] = array[j];
-      array[j] = temp;
-    }
+    if (req.query.name || (req.body && req.body.array)) {
+        var start = new Date().getTime();
 
-    // be careful: this is a very basic implementation which is nice to understand the deep principle of bubble sort (going through all comparisons) but it can be greatly improved for performances
-    function bubbleSortBasic(array) {
-      for(var i = 0; i < array.length; i++) {
-        for(var j = 1; j < array.length; j++) {
-          if(array[j - 1] > array[j]) {
-            swap(array, j - 1, j);
-          }
+        // array to sort
+        var array = req.body.array;
+
+        // swap function helper
+        function swap(array, i, j) {
+            var temp = array[i];
+            array[i] = array[j];
+            array[j] = temp;
         }
-      }
-      return array;
+
+
+        // be careful: this is a very basic implementation which is nice to understand the deep principle of bubble sort (going through all comparisons) but it can be greatly improved for performances
+        function bubbleSortBasic(array) {
+            for(var i = 0; i < array.length; i++) {
+                for(var j = 1; j < array.length; j++) {
+                    if(array[j - 1] > array[j]) {
+                        swap(array, j - 1, j);
+                    }
+                }
+            }
+            // return array;
+        }
+
+        bubbleSortBasic(array);
+        var end = (new Date().getTime() - start);
+
+        context.res = {
+            status: 200,
+            body:"" + end
+        };
+
+
     }
-    console.log(bubbleSortBasic(array.slice())); // => [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]
-    var end = (new Date().getTime() - start);
-    callback(null, end.toString());
+    else {
+        context.res = {
+            status: 400,
+            body: "Please pass a name on the query string or in the request body"
+        };
+    }
+    context.done();
 };
