@@ -1,3 +1,0 @@
-"Method","Name","# requests","# failures","Median response time","Average response time","Min response time","Max response time","Average Content Size","Requests/s"
-"POST","//calculate_pi",18555,0,750,932,81,26305,1,247.24
-"None","Total",18555,0,750,932,81,26305,1,247.24

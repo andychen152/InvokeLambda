@@ -1,0 +1,15 @@
+Azure
+test: 0 : 20.18
+test: 1 : 66.18
+test: 2 : 153.74
+test: 3 : 274.74
+GCP
+test: 0 : 53.22
+test: 1 : 236.02
+test: 2 : 493.64
+test: 3 : 915.04
+AWS
+test: 0 : 34.9
+test: 1 : 187.64
+test: 2 : 328.24
+test: 3 : 601.86
