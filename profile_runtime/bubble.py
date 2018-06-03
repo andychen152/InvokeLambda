@@ -12,7 +12,7 @@ def CreateInput():
 	return ret
 
 
-NUM_TESTS = 1
+NUM_TESTS = 50
 inputs = CreateInput()
 
 URLS = {

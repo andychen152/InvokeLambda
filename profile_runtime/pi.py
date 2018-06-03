@@ -18,7 +18,7 @@ def CreateInput(inputs):
 
 
 nums = [100000, 1000000, 10000000, 10000000]
-NUM_TESTS = 1
+NUM_TESTS = 50
 
 URLS = {
 	"GCP": "https://us-central1-bold-script-204219.cloudfunctions.net/calculate_pi",

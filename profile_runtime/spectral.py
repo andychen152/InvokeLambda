@@ -18,7 +18,7 @@ def CreateInput(inputs):
 
 
 nums = [100, 200, 300, 400]
-NUM_TESTS = 1
+NUM_TESTS = 50
 
 URLS = {
 	"GCP": "https://us-central1-bold-script-204219.cloudfunctions.net/spectral_norm",
