@@ -25,7 +25,7 @@ nums = [
 	]
 	
 NUM_TESTS = 50
-bub
+
 URLS = {
 	"GCP": "https://us-central1-bold-script-204219.cloudfunctions.net/calculate_pi",
 	"AWS": "https://ajkxgtlsxf.execute-api.us-west-1.amazonaws.com/prod/pi",
@@ -42,8 +42,8 @@ avgs = {
 inputs = CreateInput(nums)
 
 for i, put in enumerate(inputs):
-	for _ in xrange(NUM_TESTS):
-		for platform in URLS:
+	for platform in URLS:
+		for _ in xrange(NUM_TESTS):
 			# val is used for two purposes, one to index put, and another to store time
 			val = 0
 			headers = {'Content-Type': 'application/json'}

@@ -28,8 +28,8 @@ avgs = {
 }
 
 for i, put in enumerate(inputs):
-	for _ in xrange(NUM_TESTS):
-		for platform in URLS:
+	for platform in URLS:
+		for _ in xrange(NUM_TESTS):
 			val = 0
 			headers = {'Content-Type': 'application/json'}
 			r = requests.post(URLS[platform], headers=headers, data=put)
