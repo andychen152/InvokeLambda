@@ -23,8 +23,9 @@ nums = [
 	10000000, 
 	100000000
 	]
+	
 NUM_TESTS = 50
-
+bub
 URLS = {
 	"GCP": "https://us-central1-bold-script-204219.cloudfunctions.net/calculate_pi",
 	"AWS": "https://ajkxgtlsxf.execute-api.us-west-1.amazonaws.com/prod/pi",
