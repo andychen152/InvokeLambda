@@ -21,7 +21,7 @@ exports.helloWorld = (req, res) => {
     }
     return array;
   }
-  console.log(bubbleSortBasic(array.slice())); // => [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]
+  bubbleSortBasic(array.slice()); // => [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]
   var end = (new Date().getTime() - start);
   res.status(200).send(end.toString());
 };
