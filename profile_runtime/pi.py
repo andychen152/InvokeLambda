@@ -17,7 +17,12 @@ def CreateInput(inputs):
 	return ret
 
 
-nums = [100000, 1000000, 10000000, 10000000]
+nums = [
+	100000, 
+	1000000, 
+	10000000, 
+	100000000
+	]
 NUM_TESTS = 50
 
 URLS = {
