@@ -5,7 +5,7 @@ import json
 
 class UserBehavior(TaskSet):
     def on_start(self):
-        self.arg = json.dumps({"iter":10000000})
+        self.arg = json.dumps({"num":1000000})
         self.head = {'Content-Type': 'application/json'}
         # pass
 
@@ -14,11 +14,12 @@ class UserBehavior(TaskSet):
 
     @task(1)
     def profile(self):
-        self.client.post("/calculate_pi", headers=self.head, data=self.arg)
+        self.client.post("/api/HttpTriggerJS1?code=dop/aTm6SCDIyAaudKn25mY85pczrZOft630FOFu4uzxPBxiuIGkxw==", headers=self.head, data=self.arg)
 
 class WebsiteUser(HttpLocust):
     task_set = UserBehavior
-    host = "https://us-central1-bold-script-204219.cloudfunctions.net/"
+    host = "https://computepi.azurewebsites.net"
+
 
     # automatically waits 1 second if nothing is specified
     # min_wait = 5000

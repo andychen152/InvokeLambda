@@ -1,0 +1,3 @@
+"Method","Name","# requests","# failures","Median response time","Average response time","Min response time","Max response time","Average Content Size","Requests/s"
+"POST","/api/HttpTriggerJS1?code=dop/aTm6SCDIyAaudKn25mY85pczrZOft630FOFu4uzxPBxiuIGkxw==",13227,0,700,837,112,33871,3,253.56
+"None","Total",13227,0,700,837,112,33871,3,253.56

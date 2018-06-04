@@ -1,0 +1,3 @@
+"Method","Name","# requests","# failures","Median response time","Average response time","Min response time","Max response time","Average Content Size","Requests/s"
+"POST","/prod/pi",6999,0,760,823,69,2847,3,244.39
+"None","Total",6999,0,760,823,69,2847,3,244.39
