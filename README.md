@@ -24,3 +24,9 @@ Our goal is to invoke an AWS Lambda function from other cloud providers. Such fu
 
 # Week 9 Contrubutions:
 * New Trigger Link: https://s3buckettrigger.azurewebsites.net/api/HttpTriggerJS1?code=U53HmWRY/bzqPT6rcW70GETdM/SyPoPFT72e1znhvx94cPqUxS2n3w==
+
+# Week 10 Contributions:
+* Uploaded benchmark code for each cloud service in /FaasCode
+* Uploaded code and output for profiling the runtime of each benchmark for each cloud in /ProfilingRuntime
+* Uploaded code and results for load tests in /LoadTesting
+* Uploaded slides from presentation
