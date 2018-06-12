@@ -1,0 +1,4 @@
+# AWS Lambda Trigger
+This directory contains the files needed to trigger Lambda from Azure.
+
+## Setting up Lambda

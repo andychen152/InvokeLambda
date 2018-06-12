@@ -3,16 +3,16 @@ import boto3
 import os
 import sys
 import uuid
-
+from PIL import Image
+import PIL.Image
      
 s3_client = boto3.client('s3')
      
-def reverse_string(string_path, reversed_path):
-    with open(string_path, 'r') as fd_read:
-        with open(reversed_path, 'w') as fd_write:
-            for line in fd_read:
-                line = str(line.strip()[::-1]) + "\n"
-                fd_write.write(line)
+def resize_image(image_path, resized_path):
+    with open(image_path, 'r') as fd_read:
+        with open(resized_path, 'w') as fd_write:
+            new_img = fd_read.resize((500,500))
+            fd_write(new_img)
 
      
 def handler(event, context):
@@ -23,5 +23,5 @@ def handler(event, context):
         upload_path = '/tmp/reverse-{}'.format(key)
         
         s3_client.download_file(bucket, key, download_path)
-        reverse_string(download_path, upload_path)
+        resize_image(download_path, upload_path)
         s3_client.upload_file(upload_path, '{}reverse'.format(bucket), key)
