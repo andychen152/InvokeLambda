@@ -33,3 +33,7 @@ Each directory has a short README file with specifications on how to use the cod
 * Uploaded code and output for profiling the runtime of each benchmark for each cloud in /ProfilingRuntime
 * Uploaded code and results for load tests in /LoadTesting
 * Uploaded slides from presentation
+
+# Authors
+* Andy Chen - andychen@umail.ucsb.edu
+* Andrew Huang - andrewhuang@umail.ucsb.edu
